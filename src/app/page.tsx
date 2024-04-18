@@ -7,7 +7,7 @@ import {
   AiFillGithub,
   AiFillLinkedin,
   AiFillInstagram
-} from 'react-icons/ai';
+} from &apos;react-icons/ai&apos;;
 
 import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
@@ -42,7 +42,7 @@ export default function Home() {
     <main className="bg-white px-10 md:px-20 lg:px-50 dark:bg-black dark:text-white">
       <section className="min-h-screen">
         <nav className="py-10 mb-12 flex justify-between">
-          <h1 className="text-xl font-burtons md:text-2xl lg:text-2xl">Anuja's Portfolio</h1>
+          <h1 className="text-xl font-burtons md:text-2xl lg:text-2xl">Anuja&apos;s Portfolio</h1>
           <ul className="flex items-center gap-8">
 
             <li><BsFillMoonStarsFill onClick={() => setDark(!darkMode)}
@@ -57,7 +57,7 @@ export default function Home() {
           <h2 className="text-5xl text-teal-600 py-5">Anuja Herath</h2>
           <h3 className="text-2xl py-5">FullStack Developer</h3>
           <p  className="text-md py-5 text-gray-500 font-medium leading-8">
-              Hello, I'm Anuja. I'm a full-stack developer currently pursuing a Master's degree in Data Science and Analytics. With over two years of experience, I specialize in backend development and data science, boasting proven expertise in Java, Python, Django, React.js, and front-end technologies. I enjoy building sites and apps and am currently learning the MERN stack. My focus areas are React (Next.js) and Data Science.
+              Hello, I&apos;m Anuja. I&apos;m a full-stack developer currently pursuing a Master&apos;s degree in Data Science and Analytics. With over two years of experience, I specialize in backend development and data science, boasting proven expertise in Java, Python, Django, React.js, and front-end technologies. I enjoy building sites and apps and am currently learning the MERN stack. My focus areas are React (Next.js) and Data Science.
 
           </p>
         </div>
@@ -70,7 +70,7 @@ export default function Home() {
         </div>
 
         <div className="w-50 h-50  mx-auto object-cover block-relative mt-20 pt-10 md:w-96 md:h-96 flex items-center justify-center overflow-hidden">
-          <Image src={anu1} className="object-cover w-96 h-96"/>
+          <Image src={anu1} className="object-cover w-96 h-96" alt=""/>
         </div>
       </section>
       <section>
@@ -80,7 +80,7 @@ export default function Home() {
             As a dedicated FullStack Developer with a passion for data and 
             a knack for creating seamless user experiences, I offer a range of 
             services that bridge the gap between data science and front-end magic. 
-            Here’s how I can help bring your projects to life:
+            Here&apos;s how I can help bring your projects to life:
           </p>
           <p className="text-md py-2 leading-8 text-gray-700 md:text-2xl">
           
@@ -89,7 +89,7 @@ export default function Home() {
         </div>
         <div className="lg:flex gap-10">
           <div className="text-center shadow-lg p-10 rounded-xl my-10">
-            <Image className="m-auto" src={code1} />
+            <Image className="m-auto" src={code1} alt=""/>
             <h3 className="text-lg font-md"><b>Backend Development and API Integration </b></h3>
             <p className="py-2 md:text-2xl">
               Crafting robust backend systems with Java and Python.
@@ -109,7 +109,7 @@ export default function Home() {
           <div className="text-center shadow-lg p-10 rounded-xl my-10">
             
   
-            <Image className="m-auto" src={design1} />
+            <Image className="m-auto" src={design1} alt=""/>
             <h3 className="text-lg font-md"> <b>Web Application Development</b></h3>
             <p className="py-2 md:text-2xl">
               Building responsive and dynamic single-page applications (SPAs) 
@@ -127,7 +127,7 @@ export default function Home() {
 
 
           <div className="text-center shadow-lg p-20 rounded-xl my-10">
-            <Image className="m-auto" src={consulting} />
+            <Image className="m-auto" src={consulting} alt=""/>
             <h3 className="text-lg font-md"><b>FullStack Development with MERN Stack </b></h3>
             <p className="py-2 md:text-2xl">
                 Leveraging the MERN (MongoDB, Express.js, React.js, Node.js) 
@@ -166,40 +166,40 @@ export default function Home() {
 </p>
         <div className="flex flex-col gap-8 lg:flex-wrap lg:flex-row">
           <div className="basis-1/3 flex-1">
-            <Image src={PdfQABot} />
+            <Image src={PdfQABot} alt=""/>
           </div> 
 
 
         <div className="basis-1/3 flex-1">
             <a target="_blank" href="https://anujadilrukshiherath.github.io/" >
 
-            <Image src={tamZhi} />
+            <Image src={tamZhi} alt=""/>
             </a>
           </div>
 
           <div className="basis-1/3 flex-1">
             <a target="_blank" href="https://anujadilrukshiherath.github.io/" >
 
-            <Image src={oldPortfolio} />
+            <Image src={oldPortfolio} alt=""/>
             </a>
           </div>
 
           <div className="basis-1/3 flex-1">
           <a target="_blank" href="https://movie-land-react-js.vercel.app/" >
-            <Image src={movieLand} />
+            <Image src={movieLand} alt=""/>
             </a>
           </div>
 
           <div className="basis-1/3 flex-1">
             <a target="_blank" href="https://w1790023.users.ecs.westminster.ac.uk/hillcountry.html" >
-              <Image src={web01} />
+              <Image src={web01} alt=""/>
               </a>
             
           </div>
 
           <div className="basis-1/3 flex-1">
             <a target="_blank" href="https://w1790023.users.ecs.westminster.ac.uk/hillcountry.html" >
-            <Image src={web02} />
+            <Image src={web02} alt=""/>
             </a>
           </div>
 
