@@ -1,113 +1,217 @@
+'use client';
+
 import Image from "next/image";
+import {useState} from "react";
+import { BsFillMoonStarsFill } from "react-icons/bs";
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillInstagram
+} from 'react-icons/ai';
+
+import { FaReact } from "react-icons/fa";
+import { SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
+
+
+import code from '../../public/code.png'
+import design from '../../public/design.png'
+import consulting from '../../public/full.png'
+import PdfQABot from '../../public/PDFQAGen.jpeg'
+import oldPortfolio from '../../public/oldPortfolio.png'
+import movieLand from '../../public/MovieLand.png'
+import web01 from '../../public/web01.png'
+import tamZhi from '../../public/TamZhi.png'
+import web02 from '../../public/web02.png'
+import merrn from '../../public/merrn.png'
+import tail from '../../public/tail.png'
+import python from '../../public/python.png'
+import code1 from '../../public/code1.png'
+import design1 from '../../public/api.png'
+
+import anu1 from '../../public/anu1.png'
+
 
 export default function Home() {
+  const [darkMode, setDark] = useState(false);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+    
+  <div className={darkMode ? 'dark' : '' }>
+
+    <main className="bg-white px-10 md:px-20 lg:px-50 dark:bg-black dark:text-white">
+      <section className="min-h-screen">
+        <nav className="py-10 mb-12 flex justify-between">
+          <h1 className="text-xl font-burtons md:text-2xl lg:text-2xl">Anuja's Portfolio</h1>
+          <ul className="flex items-center gap-8">
+
+            <li><BsFillMoonStarsFill onClick={() => setDark(!darkMode)}
+             className="cursor-pointer text-2xl"/> {' '}
+            </li>
+            <a target="_blank" href="https://drive.google.com/file/d/1xlm9ZwUQEXGkqMjpM-4DXjBfVjG2-isy/view?usp=sharing" >
+              <li className="text-xl text-black-600 hover:text-red-600 cursor-pointer">
+              Resume</li></a>
+          </ul>
+        </nav>
+        <div className="text-center p-10">
+          <h2 className="text-5xl text-teal-600 py-5">Anuja Herath</h2>
+          <h3 className="text-2xl py-5">FullStack Developer</h3>
+          <p  className="text-md py-5 text-gray-500 font-medium leading-8">
+            Hello, I'm Anuja. I'm a Fullstack developer and currently studying Master's degree in Data Science and Analytics. Over two years of experience specializing in backend
+            development & data science with proven expertise in Java, Python, Django, React.js and fronend technologies. I enjoy building sites and apps. Currently learding MERN stack. My focus is React(Next.js) and Data Science.
+             
+          </p>
         </div>
-      </div>
+        <div className="text-5xl flex justify-center gap-16 text-gray-600 hover:cursor-pointer ">
+  
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+          <a target="_blank" href="https://github.com/AnujaDilrukshiHerath" ><AiFillGithub /> </a>
+          <a target="_blank" href="https://www.linkedin.com/in/anuja-herath/"><AiFillLinkedin /> </a> 
+          <a target="_blank" href="https://www.instagram.com/anuja_dilrukshi/?img_index=1"><AiFillInstagram /> </a>
+        </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
+        <div className="w-50 h-50  mx-auto object-cover block-relative mt-20 pt-10 md:w-96 md:h-96 flex items-center justify-center overflow-hidden">
+          <Image src={anu1} className="object-cover w-96 h-96"/>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h3 className="text-3xl py-1">Services I offer</h3>
+          <p className="text-md py-2 leading-8 text-gray-700 md:text-2xl"> 
+            As a dedicated FullStack Developer with a passion for data and 
+            a knack for creating seamless user experiences, I offer a range of 
+            services that bridge the gap between data science and front-end magic. 
+            Here’s how I can help bring your projects to life:
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+          <p className="text-md py-2 leading-8 text-gray-700 md:text-2xl">
+          
           </p>
-        </a>
+        
+        </div>
+        <div className="lg:flex gap-10">
+          <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <Image className="m-auto" src={code1} />
+            <h3 className="text-lg font-md"><b>Backend Development and API Integration </b></h3>
+            <p className="py-2 md:text-2xl">
+              Crafting robust backend systems with Java and Python.
+              API development with Django Rest Framework for seamless front-to-back integration.
+              Implementing authentication, authorization, and secure data handling.
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+            </p>
+            <h4 className="py-4 text-teal-500">The tools I use</h4>
+            <p className="text-gray-600 py">Python</p>
+            <p className="text-gray-600 py">Django</p>
+            <p className="text-gray-600 py">Java</p>
+            <p className="text-gray-600 py">Springboot</p>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+          </div>
+
+
+          <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            
+  
+            <Image className="m-auto" src={design1} />
+            <h3 className="text-lg font-md"> <b>Web Application Development</b></h3>
+            <p className="py-2 md:text-2xl">
+              Building responsive and dynamic single-page applications (SPAs) 
+              with React.js.
+              Server-side rendering with Next.js for SEO-friendly 
+              and performance-optimized web pages.
+              Integrating RESTful APIs and developing custom 
+              backend services with Node.js and Express.
+                          </p>
+            <h4 className="py-4 text-teal-500">The tools I use</h4>
+            <p className="text-gray-600 py">React.js</p>
+            <p className="text-gray-600 py">Next.js</p>
+            <p className="text-gray-600 py">Express</p>
+          </div>
+
+
+          <div className="text-center shadow-lg p-20 rounded-xl my-10">
+            <Image className="m-auto" src={consulting} />
+            <h3 className="text-lg font-md"><b>FullStack Development with MERN Stack </b></h3>
+            <p className="py-2 md:text-2xl">
+                Leveraging the MERN (MongoDB, Express.js, React.js, Node.js) 
+                stack for fullstack application development.
+                Creating end-to-end solutions that are scalable, 
+                maintainable, and user-friendly.
+            </p>
+            <h4 className="py-4 text-teal-500">The tools I use</h4>
+            <p className="text-gray-600 py">MongoDb</p>
+            <p className="text-gray-600 py">Express.js</p>
+            <p className="text-gray-600 py">React.js</p>
+            <p className="text-gray-600 py">Node.js</p>
+
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3 className="text-3xl py-1">Portfolio</h3>
+                  <p className="text-md py-2 leading-8 text-gray-700 md:text-2xl"> 
+
+        {/* <p className="text-md py-2 leading-8 text-gray-800"> */}
+       
+          Designing and managing database schemas with a focus on efficiency and scalability.
+          Backend optimization for improved performance.
+          Implementing server-side logic and functionality.
+          Ensuring application robustness and reliability. </p>
+                    <p className="text-md py-2 leading-8 text-gray-700 md:text-2xl"> 
+
+          Conducting thorough data analysis to drive decision-making and insights.
+          Designing and implementing machine learning models to solve complex problems.
+          Data visualization to help communicate complex datasets in an understandable manner.
+          Providing strategic recommendations based on data-driven insights. </p>
+       
+                 <p className="text-md py-5 leading-8 text-gray-700 md:text-2xl">
+</p>
+        <div className="flex flex-col gap-8 lg:flex-wrap lg:flex-row">
+          <div className="basis-1/3 flex-1">
+            <Image src={PdfQABot} />
+          </div> 
+
+
+        <div className="basis-1/3 flex-1">
+            <a target="_blank" href="https://anujadilrukshiherath.github.io/" >
+
+            <Image src={tamZhi} />
+            </a>
+          </div>
+
+          <div className="basis-1/3 flex-1">
+            <a target="_blank" href="https://anujadilrukshiherath.github.io/" >
+
+            <Image src={oldPortfolio} />
+            </a>
+          </div>
+
+          <div className="basis-1/3 flex-1">
+          <a target="_blank" href="https://movie-land-react-js.vercel.app/" >
+            <Image src={movieLand} />
+            </a>
+          </div>
+
+          <div className="basis-1/3 flex-1">
+            <a target="_blank" href="https://w1790023.users.ecs.westminster.ac.uk/hillcountry.html" >
+              <Image src={web01} />
+              </a>
+            
+          </div>
+
+          <div className="basis-1/3 flex-1">
+            <a target="_blank" href="https://w1790023.users.ecs.westminster.ac.uk/hillcountry.html" >
+            <Image src={web02} />
+            </a>
+          </div>
+
+          
+
+        </div>
+      </section>
+
+
+</main>
+  </div>
+</>
   );
 }
