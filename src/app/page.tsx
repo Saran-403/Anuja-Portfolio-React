@@ -68,9 +68,8 @@ export default function Home() {
           <a target="_blank" href="https://www.instagram.com/anuja_dilrukshi/?img_index=1"><AiFillInstagram /> </a>
         </div>
 
-        <div className="w-50 h-50 mx-auto object-cover block-relative mt-20 pt-10 md:w-96 md:h-96 flex items-center justify-center overflow-hidden relative">
+        <div className="w-50 h-50  mx-auto object-cover block-relative mt-20 pt-10 md:w-96 md:h-96 flex items-center justify-center overflow-hidden">
           <Image src={anu1} className="object-cover w-96 h-96" alt=""/>
-          <div className="absolute inset-0 bg-black opacity-50 rounded-full"></div>
         </div>
       </section>
       <section>
