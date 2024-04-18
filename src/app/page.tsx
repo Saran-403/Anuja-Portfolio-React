@@ -7,12 +7,11 @@ import {
   AiFillGithub,
   AiFillLinkedin,
   AiFillInstagram
-} from &apos;react-icons/ai&apos;;
+} from 'react-icons/ai';
 
 import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
-
 
 import code from '../../public/code.png'
 import design from '../../public/design.png'
